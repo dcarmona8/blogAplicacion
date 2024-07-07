@@ -1,0 +1,19 @@
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-container {
+    width: 40%;
+  }
+  
+  .news-list {
+    width: 55%;
+  }
+  
+  .news-list div {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  

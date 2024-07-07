@@ -1,0 +1,32 @@
+<div class="blog-container">
+    <div class="form-container">
+      <form (ngSubmit)="addNews()" #newsForm="ngForm">
+        <div>
+          <label for="title">Título:</label>
+          <input type="text" id="title" [(ngModel)]="newNews.title" name="title" required>
+        </div>
+        <div>
+          <label for="image">Imagen (URL):</label>
+          <input type="text" id="image" [(ngModel)]="newNews.image" name="image" required>
+        </div>
+        <div>
+          <label for="body">Cuerpo:</label>
+          <textarea id="body" [(ngModel)]="newNews.body" name="body" required></textarea>
+        </div>
+        <div>
+          <label for="date">Fecha:</label>
+          <input type="date" id="date" [(ngModel)]="newNews.date" name="date" required>
+        </div>
+        <button type="submit">Publicar</button>
+      </form>
+    </div>
+    <div class="news-list">
+      <div *ngFor="let news of newsList">
+        <h2>{{news.title}}</h2>
+        <img [src]="news.image" alt="{{news.title}}">
+        <p>{{news.body}}</p>
+        <small>{{news.date}}</small>
+      </div>
+    </div>
+  </div>
+  

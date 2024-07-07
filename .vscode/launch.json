@@ -15,6 +15,12 @@
       "request": "launch",
       "preLaunchTask": "npm: test",
       "url": "http://localhost:9876/debug.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/src/app/blog/blog.component.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/src/app/blog/blog.component.html"
     }
   ]
 }
